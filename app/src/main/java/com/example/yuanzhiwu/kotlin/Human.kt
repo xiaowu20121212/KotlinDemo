@@ -30,4 +30,16 @@ open class Human constructor(var name: String) {
             println("body do play")
         }
     }
+
+    /**
+     * 中缀表达式
+     * 条件：
+     * 1.必须时某个类型的扩展函数或者成员方法
+     * 2.该中缀函数只能有一个参数，该参数不能有默认值
+     */
+    infix fun playWith(human: Human) {
+        println("my name is ${name}, play with human named ${human.name}")
+    }
+
+
 }

@@ -7,5 +7,7 @@ class Woman(name: String, color: String) : Human(name, 1, color) {
 
     override fun action() {
         super.action()
+        val human = Man("xiaowu","red")
+        this playWith human
     }
 }
