@@ -18,6 +18,9 @@ open class X {
     }
 }
 
+operator fun Base.invoke(){
+    println("invoke" + javaClass.simpleName)
+}
 class Y : X() {
     override fun Base.foo() {
         println("i am Base.foo in Y")
